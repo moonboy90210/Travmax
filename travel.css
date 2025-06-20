@@ -1,0 +1,146 @@
+
+
+body {
+	margin: auto;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.navbar-brand {
+	font-size: 1.5rem;
+	color: white;
+} 
+.nav-link {
+font-size: 1.2rem;
+	color: white;
+	
+}
+.welcome {
+	/* padding: 60px; */
+	margin-top: 30vh;
+
+}
+.bg {
+    /* display: table;
+    width: 100%; */
+   
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/beautiful-cancun\ 1920x1080.jpg);
+    background-size: 100% 100%;
+	background-size: cover;
+	background-position: center top;
+    /* background-position: center top; */
+}
+#home {
+	height: 100vh;
+	min-height: 650px;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	color: white;
+}
+.infotxt {
+	font-weight:bolder;
+	
+}
+.infotxt2 {
+	font-size: 1.3rem;
+	padding-right: 30px;
+}
+#about {
+padding: 20px;
+	
+}
+#testimony {
+	padding: 20px;
+}
+#faqi {
+	background-color:rgb(28, 97, 189);
+	padding: 40px;
+}
+.blog {
+	display: flex;
+	justify-content: center;
+	
+}
+#blog {
+	padding: 20px;
+	padding-bottom: 50px;
+}
+.locay {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	
+}
+/* .fa-solid {
+	background-color: black;
+	background-size: 50%;
+	border-radius: 60%;
+} */
+.figure {
+	display: flex;
+	justify-content: center;
+}
+.star {
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+}
+.start {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.topic {
+	/* padding-left: 20px; */
+	/* padding: 20px; */
+	container: 500px;
+}
+.footer {
+	/* margin: 50px; */
+	padding: 50px;
+}
+/* .bg-light {
+	background-color: #f8f9fa
+} */
+
+@media screen and (min-width: 768px) {
+div.disp {
+	/* background-color: red; */
+	margin-top: -15vh;
+		
+	}
+	h5.infotxt2 {
+		font-size: 1.5rem;
+		padding-right: auto;
+		
+	}
+	div.imgp {
+		padding-top: 30px;
+	}
+	span.start {
+
+		display: flex;
+		justify-content: end;
+		position: relative;
+		
+	}
+}
+	/* p.star {
+		text-align: start;
+		font-size: 1.6rem;
+
+	}
+
+
+} */
+@media screen and (min-width: 880px) {
+	p.star {
+		text-align: start;
+		font-size: 1.6rem;
+
+	}
+
+
+}

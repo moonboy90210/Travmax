@@ -1,0 +1,136 @@
+    <!-- 
+        <section id="about">
+            <div class="container">
+                <div class="my-5">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Img/alex-azabache-V83v-MYB_Z8-unsplash.jpg" class="img-fluid d-block w-100 p-3"
+                                    style="filter: blur(1px);" alt="...">
+                               
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Travel the world</h1>
+                                    <p>Every destination is a checkpoint and the world is your compass.</p>
+                                    <button class="btn text-light m-5"><b> GET STARTED</b></button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Img/rana-sawalha-W_-6PWGbYaU-unsplash.jpg" class="img-fluid d-block w-100 p-3"
+                                    style="filter: blur(1px);" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Book with ease</h1>
+                                    <p>Easily <b>change your booking or get a refund if Monkeypox gets in the way of your
+                                            travel plans</b></p>
+                                    <button class="btn text-light m-5"><b>BOOK NOW</b></button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/tom-barrett-M0AWNxnLaMw-unsplash.jpg" class="img-fluid d-block w-100 p-3"
+                                    style="filter: blur(1px);" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Tried and Trusted</h1>
+                                    <p>Dont't take our word for it! You can learn more about us at the press of a button.
+                                    </p>
+                                    <button class="btn text-light m-5"><b>LEARN MORE</b></button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    <!-- <section id="packages">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="figure">
+                        <div class="card border border-warning border-2" style="height: 550px; width: 18rem;">
+                            <div class="card-header text-center bg-warning ">3-5 DAYS</div>
+                            <img class="card-img-top" src="img/cancun.jpg" style="height: 190px;" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Trip to Cancun</h5>
+                                <p class="card-text">Explore our abundance of romantic Cancun vacation packages for
+                                    couples or peruse family-friendly hotels and vacation packages.
+                                </p>
+                                <h6 class="text-warning pt-4"> <small>PRICE FROM</small></h6>
+                                <h4>$900/person</h4>
+                            </div>
+                            <button type="button" class="btn btn-outline-warning border-0">TAKE OFF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="figure">
+                        <div class="card border border-warning border-2 " style="height: 550px; width: 18rem;">
+                            <div class="card-header text-center bg-warning ">3-5 DAYS</div>
+                            <img class="card-img-top" src="img/fiji.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Trip to Fiji</h5>
+                                <p class="card-text">Fiji is the island getaway that you have been looking for. The
+                                    beautiful beaches alone will be enough, talk less of the genuinely friendly Fijian
+                                    people.</p>
+                                <h6 class="text-warning pt-2"> <small>PRICE FROM</small></h6>
+                                <h4>$1,200/person</h4>
+                            </div>
+                            <button type="button" class="btn btn-outline-warning border-0">TAKE OFF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="figure">
+                        <div class="card border border-warning border-2" style="height: 550px; width: 18rem;">
+                            <div class="card-header text-center bg-warning border-0">3-5 DAYS</div>
+                            <img class="card-img-top" src="img/kenya.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Trip to Kenya</h5>
+                                <p class="card-text">Kenya home of safaris and the Great Rift Valley, Nairobi, Masai
+                                    Mara, Amboseli and the Big Five.</p>
+                                <h6 class="text-warning pt-5"> <small>PRICE FROM</small></h6>
+                                <h4>$600/person</h4>
+                            </div>
+                            <button type="button" class="btn btn-outline-warning border-0">TAKE OFF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="figure">
+                        <div class="card border border-warning border-2" style="height: 550px; width: 18rem;">
+                            <div class="card-header text-center bg-warning border-0">3-5 DAYS</div>
+                            <img class="card-img-top" src="img/kenya.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Trip to Kenya</h5>
+                                <p class="card-text">Kenya home of safaris and the Great Rift Valley, Nairobi, Masai
+                                    Mara, Amboseli and the Big Five.</p>
+                                <h6 class="text-warning pt-5"> <small>PRICE FROM</small></h6>
+                                <h4>$600/person</h4>
+                            </div>
+                            <button type="button" class="btn btn-outline-warning border-0">TAKE OFF</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
