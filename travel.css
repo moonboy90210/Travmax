@@ -1,140 +1,381 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 
+
+}
+
+html {
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+
+}
+
+ul {
+	list-style-type: none;
+}
 
 body {
 	margin: auto;
 }
+
 a {
 	text-decoration: none;
 	color: black;
 }
+
 .navbar-brand {
 	font-size: 1.5rem;
 	color: white;
-} 
-.nav-link {
-font-size: 1.2rem;
-	color: white;
-	
 }
-.welcome {
-	/* padding: 60px; */
-	margin-top: 30vh;
+
+.nav-link {
+	font-size: 1.2rem;
+	color: white;
 
 }
+
+
 .bg {
-    /* display: table;
-    width: 100%; */
-   
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/beautiful-cancun\ 1920x1080.jpg);
-    background-size: 100% 100%;
-	background-size: cover;
-	background-position: center top;
-    /* background-position: center top; */
-}
-#home {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/beautiful-cancun\ 1920x1080.jpg);
+	background-repeat: no-repeat;
 	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+}
+
+/* HOME */
+#home {
+
+  color: #fff;
 	min-height: 650px;
-	background-repeat: repeat;
-	background-attachment: fixed;
-	color: white;
 }
-.infotxt {
-	font-weight:bolder;
-	
+.btn-orange {
+  background-color: #ff7f11;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
 }
+.btn-outline-orange {
+  color: #ff7f11;
+  border: 2px solid #ff7f11;
+  transition: all 0.3s ease;
+}
+.btn-outline-orange:hover {
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+/* HERO ADJUSTMENTS FOR SCREEN SIZEZ */
+.hero-title {
+    font-size: clamp(2rem, 5vw, 3rem); /* scales between 2rem and 3rem depending on screen width */
+    line-height: 1.2;
+}
+
+.hero-text {
+    font-size: clamp(1rem, 2.5vw, 1.2rem); /* scales between 1rem and 1.2rem */
+}
+/* Buttons scale On smaller screens */
+.btn {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    padding: clamp(10px, 1.5vw, 12px) clamp(20px, 2.5vw, 24px);
+}
+
+/* Adjust navbar links on smaller screens */
+.navbar-nav .nav-link {
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+@media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.infotxt { 
+	font-weight: bolder;
+
+}
+/* ADJUSTMENT ENDS */
+
+
+/* BEGINNING */
+/* ABOUT */
+#about {
+  background-color: #f8f9fa;
+}
+
+.btn-teal {
+  background-color: #008b8b;
+  color: #fff;
+  /* border: none; */
+  transition: all 0.3s ease;
+}
+
+.btn-teal:hover {
+  background-color: #00b3b3;
+  transform: translateY(-2px);
+}
+
+.about-images {
+  position: relative;
+  margin-left: 90px;
+}
+
+.about-img-main {
+  width: 85%;
+  border-radius: 20px;
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.about-img-secondary {
+  position: absolute;
+  bottom: -20px;
+  left: -10%;
+  width: 55%;
+  border-radius: 20px;
+  border: 5px solid white;
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.about-images:hover .about-img-main {
+  transform: translateY(10px) rotate(2deg);
+}
+
+.about-images:hover .about-img-secondary {
+  transform: translateY(5px) rotate(-2deg);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 767px) {
+  .about-img-secondary {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .about-img-main {
+	position: static;
+	width: 100%;
+  }
+  .about-images {
+	margin-left: 0;
+	text-align: center;
+  }
+}
+/* SERVICES */
+#services {
+  background-color:  #f5f2f0; /* Light teal tone for freshness */
+}
+.service-card {
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #00bfa6;
+  box-shadow: 0 10px 25px rgba(0, 191, 166, 0.2);
+}
+
+.service-icon i {
+  transition: transform 0.4s ease;
+}
+.service-card:hover .service-icon i {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.learn-more {
+  color: #ff7f11;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.learn-more:hover {
+  color: #0077b6;
+}
+
+/* new p for FAQ section */
+#faq {
+  background-color: #E0F7FA;
+}
+ .faq-section {
+    background: #f8f9fa;
+  }
+
+  .accordion-button {
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background: #e9f3ff;
+    color: #0d6efd;
+    box-shadow: none;
+  }
+
+  .accordion-item {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+
+  .accordion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .accordion-body {
+    background: #fff;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .faq-section h2 {
+      font-size: 1.4rem;
+    }
+  }
+  /* FAQ Image*/
+  .faq-image {
+    max-width: 90%;
+    height: auto;
+    /* border: 4px solid #00bfa6; */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .faq-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 191, 166, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .faq-image {
+      max-width: 100%;
+      border-width: 3px;
+    }
+  }
+  /* end of new FAQ section */
+ 
+    .travmax-blog {
+    background: #f8f9fa;
+  }
+
+  .text-teal { color: #00bfa6; }
+  .text-ocean { color: #0077b6; }
+  .text-orange { color: #ff7f11; }
+  .bg-teal { background-color: #00bfa6 !important; }
+
+  .blog-card {
+    border-radius: 1rem;
+    transition: all 0.4s ease;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 191, 166, 0.2);
+  }
+
+  .blog-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .blog-card:hover .blog-img {
+    transform: scale(1.08);
+  }
+
+  .blog-link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .blog-link:hover {
+    color: #0077b6; 
+  }
+
+  .modal-content {
+    background-color: #ffffff;
+  }
+
+  .modal-body p {
+    color: #555;
+    line-height: 1.6;
+  }
+
 .infotxt2 {
 	font-size: 1.3rem;
 	padding-right: 30px;
 }
-#about {
-padding: 20px;
-	
-}
-#testimony {
-	padding: 20px;
-}
-#faqi {
-	background-color:rgb(28, 97, 189);
-	padding: 40px;
-}
+
+
 .blog {
 	display: flex;
 	justify-content: center;
-	
+
+}
+.begin {
+  background-color: #f5f2f0;
+  height: 250px;
 }
 #blog {
-	padding: 20px;
-	padding-bottom: 50px;
+    background-color: #FFFFFF; 
 }
-.locay {
-	display: flex;
-	position: absolute;
-	bottom: 0;
-	
-}
-/* .fa-solid {
-	background-color: black;
-	background-size: 50%;
-	border-radius: 60%;
-} */
-.figure {
-	display: flex;
-	justify-content: center;
-}
+
 .star {
-	color: white;
+	color: black;
 	text-align: center;
 	font-size: 1rem;
 }
-.start {
-	display: flex;
-	justify-content: center;
-	padding: 10px;
+/* FOOTER */
+#footer {
+  background-color: #004D61;
 }
+  .footer-links li a {
+    color: #ffffffcc;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+  }
+  .footer-links li a:hover {
+    color: #ffb84d;
+    padding-left: 6px;
+  }
 
-.topic {
-	/* padding-left: 20px; */
-	/* padding: 20px; */
-	container: 500px;
-}
-.footer {
-	/* margin: 50px; */
-	padding: 50px;
-}
+  .social-link {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .social-link:hover {
+    transform: translateY(-3px);
+    color: #ffb84d !important;
+  }
+
+  @media (max-width: 768px) {
+    footer h4 {
+      font-size: 1.1rem;
+    }
+    footer p, footer li {
+      font-size: 0.9rem;
+    }
+  }
 /* .bg-light {
 	background-color: #f8f9fa
 } */
 
 @media screen and (min-width: 768px) {
-div.disp {
-	/* background-color: red; */
-	margin-top: -15vh;
-		
+	div.disp {
+		/* background-color: red; */
+		margin-top: -15vh;
+
 	}
+
 	h5.infotxt2 {
 		font-size: 1.5rem;
 		padding-right: auto;
-		
-	}
-	div.imgp {
-		padding-top: 30px;
-	}
-	span.start {
 
-		display: flex;
-		justify-content: end;
-		position: relative;
-		
 	}
 }
-	/* p.star {
-		text-align: start;
-		font-size: 1.6rem;
 
-	}
-
-
-} */
 @media screen and (min-width: 880px) {
 	p.star {
 		text-align: start;
